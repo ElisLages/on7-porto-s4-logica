@@ -1,0 +1,23 @@
+{
+  "name": "on7-porto-s4-logica",
+  "version": "1.0.0",
+  "description": "Nessa aula veremos como trabalhar com quantidades maiores de dados ao mesmo tempo, utilizando estruturas que chamamos de arrays e objetos.",
+  "main": "exemplos.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElisLages/on7-porto-s4-logica.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ElisLages/on7-porto-s4-logica/issues"
+  },
+  "homepage": "https://github.com/ElisLages/on7-porto-s4-logica#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}

@@ -38,7 +38,8 @@ console.log(objLivro('Antes do Baile Verde', 234, 'Lygia Fagundes Telles'))
 //   nomeCompleto: 'Nazaré Tedesco'
 // }
 
-// 4) Crie uma função que receba o objeto abaixo e o nome de uma das chaves, e retorne a soma de todos os elementos do array que for selecionado através da chave.
+// 4) Crie uma função que receba o objeto abaixo e o nome de uma das chaves, e retorne a soma de todos os elementos 
+//    do array que for selecionado através da chave.
 
 const objArrays = {
   array1: [1, 2, 3],

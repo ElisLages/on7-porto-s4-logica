@@ -1,6 +1,9 @@
+
 // DESAFIO - validador de cartão de crédito
 
-// Todos os números de cartão de crédito têm uma sequência que pode ser validada através de um algoritmo chamado Algoritmo de Luhn. Para validar qualquer número de cartão de crédito (o padrão de 16 dígitos), siga os seguintes passos:
+/* Todos os números de cartão de crédito têm uma sequência que pode ser validada através de um algoritmo chamado 
+ Algoritmo de Luhn. Para validar qualquer número de cartão de crédito (o padrão de 16 dígitos), 
+ siga os seguintes passos:*/
 
 // 1. Retire o último dígito do número. Ele é o verificador;
 // 2. Escreva os números na ordem inversa;
@@ -17,13 +20,40 @@
 // 5381579886310193
 // 5261400319746371
 
+
+const arrayNumeros = [5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 4]
+     arrayNumeros.pop()
+     arrayNumeros.reverse()
+  
+  
+  function multiImpares([]){ 
+    for (let i = 0; i < arrayNumeros.length; i%2) {
+        return true
+    }
+  }
+
+
+
+    
+     console.log(multiImpares (arrayNumeros))
+  //console.log(`índice: ${i}, elemento: ${numeros[i]}`)
+//arr.pop()
 ///////////////////////
+
+
+
+
+
+
+
+
 
 // DESAFIO - saudar clientes
 
-// Escreva uma função chamada saudarCliente.
-// Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação com base em quantas vezes a cliente visitou um estabelecimento. 
-// Consulte o objeto baseClientes abaixo. A saudação deve ser diferente, dependendo do nome da reserva.
+/* Escreva uma função chamada saudarCliente.
+   Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação com base em 
+   quantas vezes a cliente visitou um estabelecimento. 
+   Consulte o objeto baseClientes abaixo. A saudação deve ser diferente, dependendo do nome da reserva.*/
 
 // Caso 1 - Cliente desconhecida (o nome não está presente no objeto baseClientes)
 // console.log(saudarCliente('Chiquinha')) // --> 'Olá, é a primeira vez por aqui?'
@@ -40,6 +70,7 @@
 // if (nomeCliente === 'Maria') {
 //   // etc
 // }
+/*function saudarCliente()
 
 const baseClientes = {
   Clotilde: {
@@ -51,4 +82,4 @@ const baseClientes = {
   Paty: {
     visitas: 3,
   },
-}
+}*/
