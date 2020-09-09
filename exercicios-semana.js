@@ -21,24 +21,40 @@
 // 5261400319746371
 
 
-const arrayNumeros = [5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 4]
-     arrayNumeros.pop()
+const arrayNumeros = [5, 2, 6, 1, 4, 0, 0, 3, 1, 9, 7, 4, 6, 3, 7, 1]
+const ultimoNumero = arrayNumeros.pop()
      arrayNumeros.reverse()
   
+     console.log(arrayNumeros)
   
-  function multiImpares([]){ 
-    for (let i = 0; i < arrayNumeros.length; i%2) {
-        return true
+
+    for (let i = 0; i < arrayNumeros.length; i++) {
+      if ((i+1)%2 !== 0){
+        arrayNumeros[i] = arrayNumeros[i]*2 
+        if (arrayNumeros[i] > 9){
+          arrayNumeros[i] = arrayNumeros[i] - 9
+        }
+      
+      }
+        
     }
-  }
+    console.log(arrayNumeros)
 
+    let total = 0 
+    for (let i = 0; i < arrayNumeros.length; i++)
+      total = total + arrayNumeros[i]
+      
+    console.log(total)
 
+    total = total + ultimoNumero
+    console.log(total)
+    if (total % 10 == 0)
+        console.log("É válido!") 
+    else 
+        console.log("É inválido!")
 
     
-     console.log(multiImpares (arrayNumeros))
-  //console.log(`índice: ${i}, elemento: ${numeros[i]}`)
-//arr.pop()
-///////////////////////
+   
 
 
 
