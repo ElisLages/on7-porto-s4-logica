@@ -66,10 +66,10 @@ const ultimoNumero = arrayNumeros.pop()
 
 // DESAFIO - saudar clientes
 
-/* Escreva uma função chamada saudarCliente.
-   Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação com base em 
-   quantas vezes a cliente visitou um estabelecimento. 
-   Consulte o objeto baseClientes abaixo. A saudação deve ser diferente, dependendo do nome da reserva.*/
+// Escreva uma função chamada saudarCliente.
+// Essa função deve receber um nome, verificar se ele existe na base de clientes e retornar uma saudação com 
+//base em quantas vezes a cliente visitou um estabelecimento. 
+// Consulte o objeto baseClientes abaixo. A saudação deve ser diferente, dependendo do nome da reserva.
 
 // Caso 1 - Cliente desconhecida (o nome não está presente no objeto baseClientes)
 // console.log(saudarCliente('Chiquinha')) // --> 'Olá, é a primeira vez por aqui?'
@@ -86,7 +86,6 @@ const ultimoNumero = arrayNumeros.pop()
 // if (nomeCliente === 'Maria') {
 //   // etc
 // }
-/*function saudarCliente()
 
 const baseClientes = {
   Clotilde: {
@@ -98,4 +97,26 @@ const baseClientes = {
   Paty: {
     visitas: 3,
   },
-}*/
+}
+
+const nomes = Object.keys(baseClientes)
+
+function saudarCliente(str) {
+
+  const cliente = nomes.indexOf(str)
+   
+  if (cliente === -1) {
+    console.log(`Olá ${str}, é a primeira vez por aqui?`)
+  }
+
+  let visitaCliente = baseClientes[`${str}`].visitas
+
+  if (visitaCliente === 1) {
+    console.log(`Bem vinda, ${str}! Que bom que voltou!`)
+  } else if (visitaCliente > 1) {
+    console.log(`Bem vinda mais uma vez, ${str}!`)
+  }
+
+}
+
+saudarCliente('Paty')
